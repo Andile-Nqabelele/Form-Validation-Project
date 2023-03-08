@@ -1,0 +1,191 @@
+@import url();
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(pexels-neosiam-683198.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+form {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 30%;
+    max-height: 100%;
+    padding: 1em 3em;
+    box-shadow: 0 5px 10px 1px rgba(22, 22, 22, 0.664);
+    background-color: #00000063;
+    border-radius: 10px;
+}
+
+
+.heading {
+    text-align: center;
+}
+
+.paragraph {
+    font-style: oblique;
+    color: rgb(228, 228, 228);
+    padding: 0.4em 0;
+    text-align: center;
+}
+
+.session-number {
+    text-align: end;
+    padding: 1rem 0;
+    color: rgb(5, 255, 5);
+    font-weight: 100;
+    font-size: 14px;
+}
+
+span {
+    color: rgb(255, 198, 198);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+label#profile-id {
+    padding: 0.8em 0;
+}
+
+label#password {
+    padding: 0.8em 0;
+}
+
+.profile-id {
+    height: 40px;
+    padding: 1rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+.password {
+    height: 40px;
+    padding: 1rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+.alternative {
+    text-align: right;
+}
+
+div.logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: last baseline;
+}
+
+div.logo > a {
+    padding: 1rem 0em;
+}
+
+div.logo > a > img {
+    width: 1.8rem;
+}
+
+div.logo > a > img:hover {
+    transform: scale(1.4);
+}
+
+.button {
+    text-align: center;
+    padding: 0.9rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: crimson;
+    border-radius: 2px;
+    box-shadow: 0 5px 18px 2px rgb(54, 6, 15);
+}
+
+.button:hover {
+    animation: bounce 800ms alternate infinite;
+    -webkit-animation: bounce 800ms alternate infinite;
+}
+
+.typeClass {
+    color: white;
+    font-weight: 600;
+}
+.typeClass:hover {
+    animation: characterType infinite 700ms;
+    -webkit-animation: characterType infinite 700ms;
+}
+
+
+
+hr {
+    margin: 1.7rem 0;
+}
+
+div.logo :nth-child(1) {
+    transition: 1000ms;
+    animation: moveLeft alternate-reverse linear 500ms;
+    -webkit-animation: moveLeft alternate-reverse linear 500ms;
+}
+div.logo :nth-child(2) {
+    transition-delay: 2000ms;
+    animation: moveLeft alternate-reverse linear 800ms;
+    -webkit-animation: moveLeft alternate-reverse linear 800ms;
+}
+div.logo :nth-child(3) {
+    animation: moveLeft alternate-reverse linear 1000ms;
+    -webkit-animation: moveLeft alternate-reverse linear 1000ms reverse;
+}
+
+@keyframes moveLeft {
+    from { transform-origin: 0; margin: 0;}
+    to { transform: translateX(200px); -webkit-transform: translateX(200px); -moz-transform: translateX(200px); -ms-transform: translateX(200px); -o-transform: translateX(200px); }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1.00);
+        -webkit-transform: scale(1.00);
+        -moz-transform: scale(1.00);
+        -ms-transform: scale(1.00);
+        -o-transform: scale(1.00);
+        opacity: 0%;
+}
+ 
+    to {
+        transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -o-transform: scale(1.02);
+}
+}
+
+@keyframes characterType {
+    0% {
+        opacity: 0%;
+        color: yellow;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

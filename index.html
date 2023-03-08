@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form action="" method="get" id="form">
+      <h1 class="heading">Quick Forms.</h1>
+
+      <p class="paragraph">Fill in this form to see how it works:</p>
+
+      <h3 class="session-number">Session Number: <span>0</span></h3>
+
+      <label for="profile-id" id="profile-id">Profile Id</label>
+
+    <input autofocus type="text" name="name" class="profile-id" placeholder="Profile Id" required />
+
+      <label for="pass" id="password">Password</label>
+      
+      <input
+        type="password"
+        name="password"
+        class="password"
+        placeholder="User password"
+        required
+      />
+
+      <button type="submit" class="button"><span class="typeClass">request access<i className="fa-solid fa-lock" /></span></button>
+
+      <hr>
+      <p class="alternative">Or you can log in with:</p>
+
+      <div class="logo">
+        <a href="http://"><img src="icons8-facebook-48.png" alt="" srcset=""></a>
+
+        <a href="http://"><img src="icons8-twitter-48.png" alt="" srcset=""></a>
+
+        <a href="http://"><img src="icons8-instagram-48.png" alt="" srcset=""></a>
+      <div/>
+    </form>
+  </body>
+</html>
